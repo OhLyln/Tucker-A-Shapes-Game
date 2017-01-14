@@ -1,5 +1,3 @@
-# Luke Tarr's Draw Shapes Program written in python 3.6.0
-
 # Some needed modules for this program:
 import turtle
 import os
@@ -39,7 +37,7 @@ for x in range(sides):
     Tucker.left(angle)
     Tucker.forward(50)
 
-# The USer will guess the shape, and it will play one of two sounds depending on if they win or not
+# The User will guess the shape, and it will play one of two sounds depending on if they win or not
 print("Here's your shape!\n")
 answer = str(input("What is this shape? "))
 
@@ -49,5 +47,4 @@ if answer.lower() == shape:
 else:
     os.system('aplay -q incorrect.wav')
     print("Incorrect.")
-
-exit()
+    
