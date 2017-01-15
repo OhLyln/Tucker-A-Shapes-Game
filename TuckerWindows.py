@@ -3,7 +3,7 @@ import turtle
 import os
 
 # Welcomes the user to the program
-print("Welcome to Luke's Shape Test! \n")
+print("Welcome to Tucker! \n")
 
 # Needed for my infinite, but breakable, while-loop, and to create the shape
 sides = 0
