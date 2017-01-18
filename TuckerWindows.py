@@ -2,9 +2,7 @@
 import turtle
 import os
 
-wantsToPlay = True
-while wantsToPlay == True:
-
+def TuckerPlay():
 # Welcomes the user to the program
     print("Welcome to Tucker! \n")
 
@@ -26,10 +24,12 @@ while wantsToPlay == True:
 # Creates the actual window the shapes will be drawn on with a resolution of 1000x1000 pixels
     myWindow = turtle.Screen()
     myWindow.setup(1000, 1000)
+    myWindow.clear()    
 
-# Names my turtle Tucker and creates him and makes him slower
+# Names my turtle Tucker and creates him and makes him slower  
     Tucker = turtle.Turtle()
     Tucker.speed('slow')
+    Tucker.clear()
 
 # Creates my angle variable to draw the shape
     angle = 360/sides
@@ -49,12 +49,13 @@ while wantsToPlay == True:
     else:
         os.system('start incorrect.wav')
         print("Incorrect.")
+        
+def main():
+    while True:
+        TuckerPlay()
 
-      # Asks the user if they want to play again
-	playAgain = str(input("Do you want to play again?"))
-	
-	if playAgain.lower == "yes":
-		wantsToPlay = True
-	else:
-		wantsToPlay = False
-		quit()
+        play_again = input('Play again? y/n: ') == 'y'
+        if not play_again:
+            return
+
+main()
