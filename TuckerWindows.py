@@ -23,7 +23,7 @@ def TuckerPlay():
 
 # Creates the actual window the shapes will be drawn on with a resolution of 1000x1000 pixels
     myWindow = turtle.Screen()
-    myWindow.setup(1000, 1000)
+    myWindow.setup(500, 500)
     myWindow.clear()    
 
 # Names my turtle Tucker and creates him and makes him slower  
