@@ -21,7 +21,7 @@ def TuckerPlay():
     listOfShapes = ['triangle', 'rectangle', 'pentagon', 'hexagon', 'heptagon', 'octagon', 'nonagon', 'decagon']
     shape = listOfShapes[sides - 3]
 
-# Creates the actual window the shapes will be drawn on with a resolution of 1000x1000 pixels
+# Creates the actual window the shapes will be drawn on with a resolution of 500x500 pixels
     myWindow = turtle.Screen()
     myWindow.setup(500, 500)
     myWindow.clear()    
@@ -50,6 +50,7 @@ def TuckerPlay():
         os.system('start incorrect.wav')
         print("Incorrect.")
         
+# Adds the main function, and allows replay
 def main():
     while True:
         TuckerPlay()
@@ -57,5 +58,6 @@ def main():
         play_again = input('Play again? y/n: ') == 'y'
         if not play_again:
             return
-
+        
+# Calls the main function and starts the program        
 main()
